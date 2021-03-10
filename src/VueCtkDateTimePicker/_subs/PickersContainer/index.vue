@@ -110,6 +110,7 @@
     },
     inheritAttrs: false,
     props: {
+      timezone: {type: String, default: moment.tz.guess()},
       value: { type: [String, Object], default: null },
       visible: { type: Boolean, required: true, default: false },
       position: { type: String, default: 'bottom' },
@@ -257,6 +258,14 @@
       locale () {
         this.month = this.getMonth()
         this.componentKey += 1
+      },
+      timezone: {
+        immediate: true,
+        handler (timezone) {
+          if (timezone) {
+            moment.tz.setDefault(timezone)
+          }
+        }
       }
     },
     methods: {
