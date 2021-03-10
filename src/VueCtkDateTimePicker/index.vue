@@ -71,6 +71,7 @@
       :no-keyboard="noKeyboard"
       :right="right"
       :behaviour="_behaviour"
+      :timezone="timezone"
       @validate="validate"
       @close="closePicker"
     />
