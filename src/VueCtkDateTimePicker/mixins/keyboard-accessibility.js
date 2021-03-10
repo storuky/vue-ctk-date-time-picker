@@ -1,4 +1,4 @@
-import moment from 'moment'
+import moment from 'moment-timezone'
 /*
   * Vue mixin to inject the required methods, events to handle the date navigation
   * with the keyboard.

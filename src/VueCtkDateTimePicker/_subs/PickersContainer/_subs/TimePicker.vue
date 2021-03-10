@@ -50,7 +50,7 @@
   </div>
 </template>
 <script>
-  import moment from 'moment'
+  import moment from 'moment-timezone'
 
   const ArrayHourRange = (start, end, twoDigit, isAfternoon, disabledHours, isTwelveFormat) => {
     return Array(end - start + 1).fill().map((_, idx) => {

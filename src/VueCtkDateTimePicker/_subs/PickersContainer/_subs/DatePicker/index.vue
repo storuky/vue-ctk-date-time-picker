@@ -151,7 +151,7 @@
 </template>
 
 <script>
-  import moment from 'moment'
+  import moment from 'moment-timezone'
   import { getWeekDays } from '@/VueCtkDateTimePicker/modules/month'
   import RangeShortcuts from './_subs/RangeShortcuts'
   import YearMonthSelector from './_subs/YearMonthSelector'

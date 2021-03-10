@@ -1,4 +1,4 @@
-import moment from 'moment'
+import moment from 'moment-timezone'
 
 export const getDefaultLocale = () => {
   if (typeof window === 'undefined') return null

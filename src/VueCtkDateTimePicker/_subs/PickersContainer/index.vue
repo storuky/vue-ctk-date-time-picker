@@ -94,7 +94,7 @@
 </template>
 
 <script>
-  import moment from 'moment'
+  import moment from 'moment-timezone'
 
   import DatePicker from './_subs/DatePicker'
   import TimePicker from './_subs/TimePicker'
