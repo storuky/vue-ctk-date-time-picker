@@ -1,4 +1,5 @@
 import { getDefaultLocale } from './utils'
+import moment from 'moment-timezone'
 
 export default {
   value: { type: [String, Object], default: null },
@@ -39,6 +40,7 @@ export default {
   noButtonValidate: { type: Boolean, default: false },
   firstDayOfWeek: { type: Number, default: null },
   shortcut: { type: String, default: null },
+  timezone: { type: String, default: moment.tz.guess() },
   customShortcuts: {
     type: Array,
     default: () => ([

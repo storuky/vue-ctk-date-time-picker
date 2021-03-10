@@ -78,7 +78,8 @@
 </template>
 
 <script>
-  import moment from 'moment'
+  // import moment from 'moment';
+  import moment from 'moment-timezone'
   import vClickOutside from 'v-click-outside'
 
   import CustomInput from './_subs/CustomInput'
@@ -216,6 +217,14 @@
       },
       locale (value) {
         updateMomentLocale(value, this.firstDayOfWeek)
+      },
+      timezone: {
+        immediate: true,
+        handler (value) {
+          if (value) {
+            moment.tz.setDefault(value)
+          }
+        }
       }
     },
     created () {
